@@ -8,7 +8,7 @@ main_surface = pygame.display.set_mode((surface_size, surface_size))
 my_clock = pygame.time.Clock()
 
 
-def draw_tree(order, theta, sz, posn, heading, color=(0,0,0), depth=0):
+def draw_tree(order, theta, sz, posn, heading, color=(0, 0, 0), depth=0):
     trunk_ratio = 0.29       # How big is the trunk relative to whole tree?
     trunk = sz * trunk_ratio   # length of trunk
     delta_x = trunk * math.cos(heading)
@@ -40,7 +40,7 @@ def gameloop():
     theta = 0
     while True:
 
-        # Handle evente from keyboard, mouse, etc.
+        # Handle event from keyboard, mouse, etc.
         ev = pygame.event.poll()
         if ev.type == pygame.QUIT:
             break;

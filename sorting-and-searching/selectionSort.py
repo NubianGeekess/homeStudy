@@ -13,3 +13,6 @@ def selection_sort(items):
         temporary = items[step]
         items[step] = items[location_of_smallest]
         items[location_of_smallest] = temporary
+
+items = [3.8, 7.2, 1.5, 2.7]
+print selection_sort(items)
